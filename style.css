@@ -1,8 +1,46 @@
+/* green: 284a46
+blue: 788aa3
+teal: 92b6b1 
+light green: b2c9ab
+tan: e8ddb5
+brown: 312020 */
+
+/* import fonts */
+@import url(https://fonts.googleapis.com/css?family=Radio+Canada+Big);
+
+/* text types */
 body {
+  font-family:'Radio Canada Big', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h2 {
   color: #284a46;
-  /* blue: 788aa3
-  teal: 92b6b1 
-  light green: b2c9ab
-  tan: e8ddb5
-  brown: 312020 */
+}
+
+li {
+  color: #b2c9ab;
+}
+
+h1 {
+  color: #788aa3;
+}
+
+/* display */
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
