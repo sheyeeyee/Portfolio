@@ -58,7 +58,7 @@ h1 {
 
   #intro, #aboutMe {
     text-align: left;
-    display: inline;
+    display: inline; /* NEED TO FIX LEFT ALIGNMENT */
   }
 }
 
