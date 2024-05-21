@@ -5,6 +5,8 @@ light green: b2c9ab
 tan: e8ddb5
 brown: 312020 */
 
+/* backgrounds */
+
 /* import fonts */
 @import url(https://fonts.googleapis.com/css?family=Radio+Canada+Big);
 
@@ -21,7 +23,7 @@ h2 {
 }
 
 a[href*=intro], li {
-  color: #b2c9ab;
+  color: #284a46;
 }
 
 h1 {
@@ -51,6 +53,17 @@ a:hover {
 }
 
 /* images */
+#headerName {
+  background-color: #e8ddb5;
+  max-width: 50%;
+  height: auto;
+}
+
+#signature {
+  max-width: 50%;
+  height: auto;
+}
+
 #footLogos {
   max-width: 2%;
   height: auto;
