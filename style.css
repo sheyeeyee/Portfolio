@@ -20,7 +20,7 @@ h2 {
   color: #284a46;
 }
 
-li {
+a[href*=intro], li {
   color: #b2c9ab;
 }
 
@@ -28,7 +28,7 @@ h1 {
   color: #788aa3;
 }
 
-/* display */
+/* text display */
 .bold {
   font-weight: bold;
 }
@@ -43,4 +43,15 @@ h1 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+/* pseudo-classes */
+a:hover {
+  color: #788aa3;
+}
+
+/* images */
+#linkedin {
+  width: 5%;
+  height: auto;
 }
