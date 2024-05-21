@@ -1,33 +1,79 @@
-/* green: 284a46
-blue: 788aa3
-teal: 92b6b1 
-light green: b2c9ab
-tan: e8ddb5
-brown: 312020 */
-
-/* backgrounds */
+:root {
+  --green: #284a46;
+  --blue: #788aa3;
+  --teal: #92b6b1;
+  --lightGreen: #b2c9ab;
+  --tan: #e8ddb5;
+  --brown: #312020;
+}
 
 /* import fonts */
-@import url(https://fonts.googleapis.com/css?family=Radio+Canada+Big);
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-/* text types */
+/* sections */
+header {
+  background-color: var(--tan);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  padding: 20px;
+  width: 100%;
+}
+
+.navBar {
+  list-style-type: none; /* remove bullets */
+}
+
 body {
   font-family:'Radio Canada Big', sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  padding: 10px;
+}
+
+main {
+  margin-top: calc(40% - 10px);
+  padding: 20px;
 }
 
 h2 {
-  color: #284a46;
+  color: var(--green);
 }
 
 a[href*=intro], li {
-  color: #284a46;
+  color: var(--green);
 }
 
 h1 {
-  color: #788aa3;
+  color: var(--blue);
+}
+
+/* if the screen size is 601px wide or more, left align */
+@media screen and (min-width: 601px) {
+  #portrait {
+    text-align: left;
+  }
+
+  #intro, #aboutMe {
+    text-align: left;
+    display: inline;
+  }
+}
+
+/* if the screen size is 600px wide or less, center align */
+@media screen and (max-width: 600px) {
+  #intro, #aboutMe {
+    text-align: center;
+  }
+
+  #portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
 
 /* text display */
@@ -47,29 +93,39 @@ h1 {
   text-transform: uppercase;
 }
 
-/* pseudo-classes */
-a:hover {
-  color: #788aa3;
+.half-highlight {
+  background: linear-gradient(to top, #b2c9ab 50%, transparent 50%);
+}
+
+/* hover */
+a:hover, #headerName:hover, #footLogos:hover {
+  opacity: 0.75;
 }
 
 /* images */
 #headerName {
-  background-color: #e8ddb5;
-  max-width: 50%;
+  max-width: 10%;
+  min-width: 150px;
+  height: auto;
+}
+
+#portrait {
+  max-width: 15%;
+  min-width: 150px;
   height: auto;
 }
 
 #signature {
-  max-width: 50%;
+  max-width: 7%;
+  min-width: 75px;
   height: auto;
 }
 
 #footLogos {
   max-width: 2%;
+  min-width: 20px;
   height: auto;
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: inline;
+  text-align: center;
 }
