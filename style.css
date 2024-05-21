@@ -51,7 +51,12 @@ a:hover {
 }
 
 /* images */
-#linkedin {
-  width: 5%;
+#footLogos {
+  max-width: 2%;
   height: auto;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
