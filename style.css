@@ -25,7 +25,6 @@
 
 navBar {
   display: flex;
-  align-items: center; /* align items vertically */
 }
 
 .navBar ul {
