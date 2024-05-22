@@ -38,7 +38,6 @@ navBar {
 .navBar a {
   color: var(--darkGreen);
   margin-right: 30px; /* add spacing between nav items */
-  text-decoration: none; /* remove underlines */
 }
 
 body {
@@ -49,6 +48,11 @@ body {
   padding: 10%;
 
   background-color: var(--grayGreen);
+}
+
+a {
+  color: var(--darkGreen);
+  text-decoration: none;
 }
 
 h1, h2 {
@@ -88,6 +92,12 @@ footer {
     margin-right: 5%;
     margin-top: -20px;
   }
+
+  .backgroundArticle {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+  }
 }
 
 @media screen and (min-width: 801px) and (max-width: 900px) {
@@ -118,6 +128,12 @@ footer {
     margin-right: 5%;
     margin-top: -20px;
   }
+
+  .backgroundArticle {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+  }
 }
 
 /* narrow screen */
@@ -140,6 +156,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+
+  .backgroundArticle {
+    text-align: center;
+    align-items: center;
+    max-width: 1000px;
   }
 }
 
@@ -171,7 +193,7 @@ footer {
 }
 
 /* hover */
-#headerName:hover, #footLogos:hover {
+#headerName:hover, #footLogos:hover, #engrAndMusic:hover {
   opacity: 0.75;
 }
 
