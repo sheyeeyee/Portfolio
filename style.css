@@ -1,32 +1,37 @@
 :root {
-  --green: #284a46;
+  --darkGreen: #284a46;
+  --green: #387373;
+  --lightGreen: #93BFB7;
+  --oliveGreen: #97A6A0;
+  --grayGreen: #E4F2E7;
+
   --blue: #788aa3;
   --teal: #92b6b1;
-  --lightGreen: #b2c9ab;
   --tan: #e8ddb5;
   --brown: #312020;
 }
 
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* sections */
 header {
-  background-color: var(--tan);
+  background-color: var(--grayGreen);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure it stays on top of other content */
+  z-index: 1000; /* ensure it stays on top of other content */
   padding: 20px;
   width: 100%;
 }
 
 .navBar {
   list-style-type: none; /* remove bullets */
+  display: inline;
 }
 
 body {
-  font-family:'Radio Canada Big', sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
@@ -43,11 +48,11 @@ h2 {
 }
 
 a[href*=intro], li {
-  color: var(--green);
+  color: var(--darkGreen);
 }
 
 h1 {
-  color: var(--blue);
+  color: var(--green);
 }
 
 /* if the screen size is 601px wide or more, left align */
@@ -94,7 +99,7 @@ h1 {
 }
 
 .half-highlight {
-  background: linear-gradient(to top, #b2c9ab 50%, transparent 50%);
+  background: linear-gradient(to top, var(--lightGreen) 50%, transparent 50%);
 }
 
 /* hover */
