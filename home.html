@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Shelley Wei</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <!-- <link rel="icon" href="images/faviconLightMode.png" id="light-mode-icon">
+        <link rel="icon" href="images/faviconDarkMode.png" id="dark-mode-icon"> -->
+        <!-- <script src="displayMode.js"></script> -->
+    </head>
     <body>
-        <head>
-            <title>Shelley Wei</title>
-            <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"> -->
-            <link rel="icon" href="images/faviconLightMode.png" id="light-mode-icon"> <!-- might just have one favicon that works well for most schemes -->
-            <link rel="icon" href="images/faviconDarkMode.png" id="dark-mode-icon">
-            <link href="style.css" rel="stylesheet">
-            <script src="displayMode.js"></script>
-        </head>
-
-        <header>
+        <header id="header">
             <a href="https://www.shelleywei.com"><img src="images/name.png" alt="Name Header" id="headerName"></a>
             <navBar>
                 <ul class="navBar">
-                    <li><a href="#intro">About Me</a></li>
-                    <li>Projects</li>
+                    <li><a href="#intro" id="navAbout" class="bold">About Me</a></li>
+                    <li><a id="navProj" class="bold">Projects</a></li>
                 </ul>
             </navBar>
         </header>
 
-        <main>
-            <h1 style="text-align: center;">Work in progress!</h1>
+        <main id="main">
             <section>
-                <article>
+                <article class="introArticle">
                     <img src="images/portrait.png" name="portrait" id="portrait">
-                    <h2 id="intro">Hi, I'm Shelley!</h2>
-                    <h3 id="aboutMe">With a background in <span class="half-highlight">engineering and music</span>, I enjoy piecing the two together through my journeys on design teams and other projects.</h3>
-
-                    <!--signature-->
-                    <img src="images/signature.png" alt="Signature" id="signature">
+                    <div>
+                        <h2 id="intro" class="introText">Hi, I'm Shelley!</h2>
+                        <h3 id="aboutMe" class="introText">With a background in <span class="half-highlight">engineering and music</span>, I enjoy piecing the two together through my journeys on design teams and other projects.</h3>
+                        <img src="images/signature.png" alt="Signature" id="signature">
+                    </div>
                 </article>
             </section>
         </main>
 
-        <footer>
-            <figure>
-                <a href="https://www.linkedin.com/in/shelley-wei"><img src="images/customLinkedinLogo.png" alt="LinkedIn" id="footLogos"></a>
-                <a href="https://www.youtube.com/channel/UCBcX0MnUQ5Ms1bPDIPFZd3w"><img src="images/customYtLogo.png" alt="YouTube" id="footLogos"></a>
-            </figure>
+        <footer class="footLogos">
+            <a href="https://www.linkedin.com/in/shelley-wei"><img src="images/customLinkedinLogo.png" alt="LinkedIn" id="footLogos"></a>
+            <a href="https://www.youtube.com/channel/UCBcX0MnUQ5Ms1bPDIPFZd3w"><img src="images/customYtLogo.png" alt="YouTube" id="footLogos"></a>
         </footer>
+
+        <script src="dynamicPos.js"></script>
     </body>
 </html>

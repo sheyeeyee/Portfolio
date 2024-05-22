@@ -11,12 +11,9 @@
   --brown: #312020;
 }
 
-/* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* sections */
 header {
-  background-color: var(--grayGreen);
+  background-color: var(--oliveGreen);
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +24,12 @@ header {
 
 .navBar {
   list-style-type: none; /* remove bullets */
-  display: inline;
+  display: flex;
+}
+
+.navBar a {
+  color: var(--darkGreen);
+  margin-right: 20px; /* add spacing between nav items */
 }
 
 body {
@@ -35,42 +37,59 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  padding: 10px;
+  padding: 10%;
+
+  background-color: var(--grayGreen);
 }
 
-main {
-  margin-top: calc(40% - 10px);
-  padding: 20px;
-}
-
-h2 {
+h1, h2 {
   color: var(--green);
 }
 
-a[href*=intro], li {
-  color: var(--darkGreen);
-}
+/* wide screen */
+@media screen and (min-width: 801px) {
+  .introArticle {
+    display: flex;
+    align-items: center; /* align items to the start of the container */
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 600px;
+  }
 
-h1 {
-  color: var(--green);
-}
+  #intro {
+    font-size: 4vw;
+  }
 
-/* if the screen size is 601px wide or more, left align */
-@media screen and (min-width: 601px) {
+  #aboutMe {
+    font-size: 2vw;
+  }
+
   #portrait {
-    text-align: left;
+    margin-right: 30px; /* adjust spacing between image and text */
+    flex-shrink: 0; /* prevent the image from shrinking */
   }
 
-  #intro, #aboutMe {
-    text-align: left;
-    display: inline; /* NEED TO FIX LEFT ALIGNMENT */
+  #signature {
+    float: right;
+    margin-right: 5%;
+    margin-top: -20px;
   }
 }
 
-/* if the screen size is 600px wide or less, center align */
-@media screen and (max-width: 600px) {
-  #intro, #aboutMe {
+/* narrow screen */
+@media screen and (max-width: 800px) {
+  .introArticle {
     text-align: center;
+    padding: 5%;
+  }
+
+  #intro {
+    font-size: calc(15px + 2vw);
+  }
+
+  #aboutMe {
+    font-size: calc(10px + 1vw);
   }
 
   #portrait {
@@ -84,6 +103,7 @@ h1 {
 /* text display */
 .bold {
   font-weight: bold;
+  text-decoration: none;
 }
 
 .italic {
@@ -98,16 +118,20 @@ h1 {
   text-transform: uppercase;
 }
 
-.half-highlight {
+.half-highlight, #navAbout:hover, #navProj:hover {
   background: linear-gradient(to top, var(--lightGreen) 50%, transparent 50%);
 }
 
 /* hover */
-a:hover, #headerName:hover, #footLogos:hover {
+#headerName:hover, #footLogos:hover {
   opacity: 0.75;
 }
 
 /* images */
+img.right {
+  float: right;
+}
+
 #headerName {
   max-width: 10%;
   min-width: 150px;
@@ -115,22 +139,27 @@ a:hover, #headerName:hover, #footLogos:hover {
 }
 
 #portrait {
-  max-width: 15%;
-  min-width: 150px;
+  max-width: 40%;
+  min-width: 100px;
   height: auto;
 }
 
 #signature {
-  max-width: 7%;
-  min-width: 75px;
+  max-width: 25%;
+  min-width: 60px;
+  width: 100%;
   height: auto;
+}
+
+.footLogos {
+  display: inline-block;
+  text-align: center; /* center the images horizontally */
+  width: 100%;
 }
 
 #footLogos {
   max-width: 2%;
-  min-width: 20px;
+  min-width: 25px;
   height: auto;
-
-  display: inline;
-  text-align: center;
+  margin: 5px; /* adjust spacing between images */
 }
