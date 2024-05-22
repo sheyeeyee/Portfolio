@@ -9,27 +9,36 @@
   --teal: #92b6b1;
   --tan: #e8ddb5;
   --brown: #312020;
+  --gray: #374344;
 }
 
 /* sections */
-header {
+#header {
   background-color: var(--oliveGreen);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* ensure it stays on top of other content */
+  z-index: 1000;
   padding: 20px;
   width: 100%;
 }
 
-.navBar {
-  list-style-type: none; /* remove bullets */
+navBar {
+  display: flex;
+  align-items: center; /* align items vertically */
+}
+
+.navBar ul {
+  list-style-type: none;
+  margin-right: 7vw;
+  padding: 0;
   display: flex;
 }
 
 .navBar a {
   color: var(--darkGreen);
   margin-right: 20px; /* add spacing between nav items */
+  text-decoration: none; /* remove underlines */
 }
 
 body {
@@ -46,11 +55,15 @@ h1, h2 {
   color: var(--green);
 }
 
+footer {
+  margin-top: 50px;
+}
+
 /* wide screen */
 @media screen and (min-width: 801px) {
   .introArticle {
     display: flex;
-    align-items: center; /* align items to the start of the container */
+    align-items: center; /* align items to the center of the container */
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -61,7 +74,7 @@ h1, h2 {
     font-size: 4vw;
   }
 
-  #aboutMe {
+  #aboutMe, .navBar {
     font-size: 2vw;
   }
 
@@ -88,7 +101,7 @@ h1, h2 {
     font-size: calc(15px + 2vw);
   }
 
-  #aboutMe {
+  #aboutMe, .navBar {
     font-size: calc(10px + 1vw);
   }
 
@@ -100,10 +113,15 @@ h1, h2 {
   }
 }
 
+@media screen and (max-width: 300px) {
+  #headerName {
+    display: none;
+  }
+}
+
 /* text display */
 .bold {
   font-weight: bold;
-  text-decoration: none;
 }
 
 .italic {
@@ -118,7 +136,7 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-.half-highlight, #navAbout:hover, #navProj:hover {
+.half-highlight, #navHome:hover, #navProj:hover {
   background: linear-gradient(to top, var(--lightGreen) 50%, transparent 50%);
 }
 
@@ -133,14 +151,15 @@ img.right {
 }
 
 #headerName {
-  max-width: 10%;
-  min-width: 150px;
+  max-width: 25%;
+  min-width: 100px;
+  width: fit-content;
   height: auto;
 }
 
 #portrait {
   max-width: 40%;
-  min-width: 100px;
+  /* min-width: 100px; */
   height: auto;
 }
 
