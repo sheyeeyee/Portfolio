@@ -211,6 +211,13 @@ footer {
 }
 
 /* cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjust minmax values as needed */
+  gap: 20px; /* adjust the gap between cards */
+  justify-content: center; /* center the grid horizontally */
+}
+
 .card {
   /* add shadows to create the "card" effect */
   background-color: var(--lightGrayGreen);
@@ -234,6 +241,8 @@ footer {
 
 .cardImg {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: var(--borderRad) var(--borderRad) 0 0;
 }
 
