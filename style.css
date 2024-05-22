@@ -262,7 +262,7 @@ img.right {
 
 #portrait {
   max-width: 40%;
-  /* min-width: 100px; */
+  min-width: 100px;
   height: auto;
 }
 
