@@ -24,10 +24,12 @@
 }
 
 navBar {
-  display: flex;
+  display: inline; /* need to fix anchor element on image */
+  align-items: center;
 }
 
 .navBar ul {
+  text-align: right;
   list-style-type: none;
   margin-right: 7vw;
   display: flex;
@@ -58,14 +60,44 @@ footer {
 }
 
 /* wide screen */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 901px) {
   .introArticle {
     display: flex;
-    align-items: center; /* align items to the center of the container */
+    align-items: center; /* center items vertically */
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 600px;
+    max-width: 1000px;
+  }
+
+  #intro {
+    font-size: 50px;
+  }
+
+  #aboutMe, .navBar {
+    font-size: 30px;
+  }
+
+  #portrait {
+    margin-right: 50px; /* adjust spacing between image and text */
+    flex-shrink: 0; /* prevent the image from shrinking */
+  }
+
+  #signature {
+    float: right;
+    margin-right: 5%;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .introArticle {
+    display: flex;
+    align-items: center; /* center items vertically */
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1000px;
   }
 
   #intro {
@@ -77,7 +109,7 @@ footer {
   }
 
   #portrait {
-    margin-right: 30px; /* adjust spacing between image and text */
+    margin-right: 50px; /* adjust spacing between image and text */
     flex-shrink: 0; /* prevent the image from shrinking */
   }
 
@@ -111,11 +143,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   #headerName {
     display: none;
   }
-}
+} */
 
 /* text display */
 .bold {
@@ -149,7 +181,7 @@ img.right {
 }
 
 #headerName {
-  max-width: 25%;
+  max-width: 12%;
   min-width: 100px;
   height: auto;
 }
