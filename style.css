@@ -34,7 +34,7 @@ navBar {
 
 #navBar ul {
   text-align: left;
-  text-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   display: flex;
   position: relative; /* dropdown relative to parent */
@@ -56,11 +56,11 @@ navBar {
 }
 
 /* dropdown content (hidden by default) */
- #navBar .dropdownContent {
+#navBar .dropdownContent {
   display: none;
   position: absolute;
   background-color: rgb(240, 255, 243, 0.5);
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   font-weight: 500;
   z-index: 1;
   flex-direction: column;
