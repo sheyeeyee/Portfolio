@@ -1,17 +1,17 @@
 :root {
-  --darkGreen: #284a46;
-  --green: #387373;
-  --lightGreen: #93BFB7;
-  --oliveGreen: #97A6A0;
-  --lightOliveGreen: #b3c5be;
-  --grayGreen: #E4F2E7;
-  --lightGrayGreen: #f0fff3;
+  --darkGreen: rgb(40, 74, 70);
+  --green: rgb(56, 115, 115);
+  --lightGreen: rgb(147, 191, 183);
+  --oliveGreen: rgb(151, 166, 160);
+  --lightOliveGreen: rgb(179, 197, 190);
+  --grayGreen: rgb(228, 242, 231);
+  --lightGrayGreen: rgb(240, 255, 243);
 
-  --blue: #788aa3;
-  --teal: #92b6b1;
-  --tan: #e8ddb5;
-  --brown: #312020;
-  --gray: #374344;
+  --blue: rgb(120, 138, 163);
+  --teal: rgb(146, 182, 177);
+  --tan: rgb(232, 221, 181);
+  --brown: rgb(49, 32, 32);
+  --gray: rgb(55, 67, 68);
 
   --borderRad: 15px;
 }
@@ -59,18 +59,20 @@ navBar {
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: var(--lightGrayGreen);
+  background-color: rgb(240, 255, 243, 0.5);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-radius: var(--borderRad);
+  font-weight: 500;
   z-index: 1;
   flex-direction: column;
   padding: 10px;
+  margin-top: 5px;
 }
 
 /* links inside the dropdown */
 .dropdownContent a {
   color: var(--darkGreen);
   text-decoration: none;
+  display: block;
 }
 
 /* change color of dropdown links on hover */
@@ -81,6 +83,11 @@ navBar {
 /* show the dropdown menu on hover */
 .dropdown:hover .dropdownContent {
   display: block;
+}
+
+/* hide the dropdown menu when not hovered over */
+.dropdown:not(:hover) .dropdownContent {
+  display: none;
 }
 
 body {
