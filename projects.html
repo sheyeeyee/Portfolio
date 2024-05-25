@@ -16,7 +16,14 @@
                 <nav id="navBar">
                     <ul>
                         <li><a id="navHome" class="bold" href="index.html">Home</a></li>
-                        <li><a id="navProj" class="bold active" href="projects.html">Projects</a></li>
+                        <li class="dropdown">
+                            <a id="navProj" class="bold active" href="projects.html">Projects</a>
+                                <ul class="dropdownContent">
+                                    <li><a href="#engineering">Engineering</a></li>
+                                    <li><a href="#entrepreneurship">Entrepreneurship</a></li>
+                                    <li><a href="#art">Art</a></li>
+                                </ul>
+                        </li>
                     </ul>
                 </nav>
             <navBar>
@@ -25,28 +32,47 @@
         <main id="main">
             <section>
                 <h1>Projects</h1>
+                <h2 id="engineering" class="projects">Engineering</h2>
                 <article class="cardGrid">
                     <a href="baja.html">
                         <div class="card">
                             <img src="images/bajaTeam.png" alt="CWRU Motorsports Team Picture" class="cardImg">
                             <div class="container">
-                              <h2><b>CWRU Motorsports (Baja SAE)</b></h4>
-                              <h3>Design and Manufacturing Engineer</p>
+                              <h2>CWRU Motorsports (Baja SAE)</h2>
+                              <h3>Design and Manufacturing Engineer</h3>
                             </div>
                         </div>
                     </a>
+                    <a href="robotics.html"> <!-- https://www.robotevents.com/teams/V5RC/2496V -->
+                        <div class="card">
+                            <img src="images/vexTeam.jpg" alt="VEX Robotics Team" class="cardImg">
+                            <div class="container">
+                            <h2>VEX Robotics (2020-2023)</h2>
+                            <h3>Team 2496V</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/sheyeeyee">
+                        <div class="card">
+                            <img src="images/githubLogo.png" alt="GitHub" class="cardImg" style="object-fit: contain;">
+                            <div class="container">
+                            <h2>GitHub</h2>
+                            <h3>Code for projects and classes</h3>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <br>
+                <br>
+                
+                <h2 id="entrepreneurship" class="projects">Entrepreneurship</h2>
+                <article class="cardGrid">
                     <div class="card">
                         <img src="images/thinkimpactFellows.jpg" alt="A Few ThinkImpact Fellows" class="cardImg">
                         <div class="container">
-                          <h2><b>ThinkImpact</b></h4>
+                          <h2>ThinkImpact</h2>
                           <h3>CWRU Social Entrepreneurship Fellowship</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/githubLogo.png" alt="GitHub" class="cardImg" style="object-fit: contain;">
-                        <div class="container">
-                          <h2><b>GitHub</b></h4>
-                          <h3>Code for projects and classes</p>
                         </div>
                     </div>
                 </article>
