@@ -62,16 +62,14 @@ navBar {
   background-color: var(--lightGrayGreen);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: var(--borderRad);
-  min-width: 160px;
   z-index: 1;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
 }
 
 /* links inside the dropdown */
 .dropdownContent a {
   color: var(--darkGreen);
-  padding: 12px 12px;
   text-decoration: none;
 }
 
@@ -130,6 +128,10 @@ footer {
     font-size: 30px;
   }
 
+  .dropdownContent {
+    font-size: 20px;
+  }
+
   #portrait {
     margin-right: 50px; /* adjust spacing between image and text */
     flex-shrink: 0; /* prevent the image from shrinking */
@@ -162,8 +164,8 @@ footer {
     font-size: 4vw;
   }
 
-  #aboutMe, #navBar {
-    font-size: 2vw;
+  #aboutMe, #navBar, .dropdownContent {
+    font-size: 2.5vw;
   }
 
   #portrait {
@@ -195,7 +197,7 @@ footer {
     font-size: calc(15px + 2vw);
   }
 
-  #aboutMe, #navBar {
+  #aboutMe, #navBar, .dropdownContent {
     font-size: calc(10px + 1vw);
   }
 
