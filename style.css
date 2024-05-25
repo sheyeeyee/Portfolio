@@ -42,7 +42,7 @@ navBar {
 
 #navHome, #navProj {
   color: var(--darkGreen);
-  margin-right: 7vw;
+  margin-right: 6vw;
 }
 
 #navBar a.active {
