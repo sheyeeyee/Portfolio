@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-navBar {
+#navBar {
   display: inline;
   align-items: center;
 }
