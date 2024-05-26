@@ -116,11 +116,11 @@ p {
 }
 
 .pdf {
-  aspect-ratio: 16/9;
-  width: 60%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  width: 62%;
+  max-width: 1000px;
+  resize: both;
+  height: 30vw;
 }
 
 footer {
@@ -163,12 +163,12 @@ footer {
     float: right;
     margin-right: 5%;
     margin-top: -20px;
-  }
 
-  .backgroundArticle {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
+    .pdfText {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -205,10 +205,10 @@ footer {
     margin-top: -20px;
   }
 
-  .backgroundArticle {
+  .pdfText {
     display: flex;
-    align-items: center;
-    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -236,12 +236,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-
-  .backgroundArticle {
-    text-align: center;
-    align-items: center;
-    max-width: 1000px;
   }
 }
 
