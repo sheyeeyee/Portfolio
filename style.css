@@ -14,6 +14,10 @@
   --gray: rgb(55, 67, 68);
 
   --borderRad: 15px;
+
+  --h1MaxFont: 40px;
+  --h1MidFont: 3.5vw;
+  --h1MinFont: calc(15px + 2vw);
 }
 
 /* sections */
@@ -42,7 +46,7 @@
 
 #navHome, #navProj {
   color: var(--darkGreen);
-  margin-right: 6vw;
+  margin-right: 5.5vw;
 }
 
 #navBar a.active {
@@ -129,21 +133,25 @@ footer {
     display: flex;
     align-items: center; /* center items vertically */
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: var(--h1MaxFont);
   }
 
-  .introText, #navBar {
-    font-size: 30px;
+  h2 {
+    font-size: calc(var(--h1MaxFont) - 12px);
+  }
+
+  h3, #navBar {
+    font-size: calc(var(--h1MaxFont) - 17px);
   }
 
   .dropdownContent {
-    font-size: 20px;
+    font-size: calc(var(--h1MaxFont) - 20px);
   }
 
   #portrait {
@@ -169,17 +177,21 @@ footer {
     display: flex;
     align-items: center; /* center items vertically */
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1000px;
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: var(--h1MidFont);
   }
 
-  .introText, #navBar, .dropdownContent {
-    font-size: 2.5vw;
+  h2 {
+    font-size: calc(var(--h1MidFont) - 0.75vw)
+  }
+
+  h3, #navBar, .dropdownContent {
+    font-size: calc(var(--h1MidFont) - 1vw);
   }
 
   #portrait {
@@ -208,10 +220,14 @@ footer {
   }
 
   h1 {
-    font-size: calc(15px + 2vw);
+    font-size: var(--h1MinFont);
   }
 
-  .introText, #navBar, .dropdownContent {
+  h2 {
+    font-size: calc(10px + 1.25vw);
+  }
+
+  h3, #navBar, .dropdownContent {
     font-size: calc(10px + 1vw);
   }
 
@@ -301,7 +317,8 @@ img.right {
 }
 
 #headerName {
-  max-width: 12%;
+  width: 20%;
+  max-width: 200px;
   min-width: 100px;
   height: auto;
 }
@@ -313,9 +330,9 @@ img.right {
 }
 
 #signature {
-  max-width: 25%;
+  width: 25%;
+  max-width: 125px;
   min-width: 60px;
-  width: 100%;
   height: auto;
 }
 
