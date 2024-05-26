@@ -138,7 +138,7 @@ footer {
     font-size: 50px;
   }
 
-  #aboutMe, #navBar {
+  .introText, #navBar {
     font-size: 30px;
   }
 
@@ -178,7 +178,7 @@ footer {
     font-size: 4vw;
   }
 
-  #aboutMe, #navBar, .dropdownContent {
+  .introText, #navBar, .dropdownContent {
     font-size: 2.5vw;
   }
 
@@ -211,7 +211,7 @@ footer {
     font-size: calc(15px + 2vw);
   }
 
-  #aboutMe, #navBar, .dropdownContent {
+  .introText, #navBar, .dropdownContent {
     font-size: calc(10px + 1vw);
   }
 
@@ -246,7 +246,7 @@ footer {
   text-transform: uppercase;
 }
 
-.half-highlight {
+.halfHighlight {
   background: linear-gradient(to top, var(--lightGreen) 50%, transparent 50%);
 }
 
