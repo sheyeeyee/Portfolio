@@ -39,9 +39,21 @@
 #navBar ul {
   text-align: left;
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-  list-style-type: none;
   display: flex;
   position: relative; /* dropdown relative to parent */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.toc {
+  margin-left: -20px;
+  margin-bottom: 50px;
+}
+
+.tocText {
+  font-weight: 400;
 }
 
 #navHome, #navProj {
@@ -75,7 +87,6 @@
 /* links inside the dropdown */
 .dropdownContent a {
   color: var(--darkGreen);
-  text-decoration: none;
   display: block;
 }
 
@@ -150,6 +161,10 @@ footer {
     font-size: calc(var(--h1MaxFont) - 17px);
   }
 
+  p {
+    font-size: calc(var(--h1MaxFont) - 22px);
+  }
+
   .dropdownContent {
     font-size: calc(var(--h1MaxFont) - 20px);
   }
@@ -194,6 +209,10 @@ footer {
     font-size: calc(var(--h1MidFont) - 1vw);
   }
 
+  p {
+    font-size: calc(var(--h1MidFont) - 1.25vw);
+  }
+
   #portrait {
     margin-right: 50px; /* adjust spacing between image and text */
     flex-shrink: 0; /* prevent the image from shrinking */
@@ -229,6 +248,10 @@ footer {
 
   h3, #navBar, .dropdownContent {
     font-size: calc(10px + 1vw);
+  }
+
+  p {
+    font-size: calc(10px + 0.75vw);
   }
 
   #portrait {
