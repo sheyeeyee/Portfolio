@@ -89,6 +89,7 @@ ul {
 .dropdownContent a {
   color: var(--darkGreen);
   display: block;
+  margin-right: 10px;
 }
 
 /* change color of dropdown links on hover */
@@ -188,12 +189,12 @@ footer {
     float: right;
     margin-right: 5%;
     margin-top: -20px;
+  }
 
-    .pdfText {
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .pdfText {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -223,7 +224,7 @@ footer {
   }
 
   h4, #navBar, .dropdownContent {
-    font-size: calc(var(--h1MidFont) - 1vw);
+    font-size: calc(var(--h1MidFont) - 1.25vw);
   }
 
   h5, p {
@@ -312,7 +313,7 @@ footer {
 /* cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* adjust minmax values as needed */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjust minmax values as needed */
   gap: 25px; /* adjust the gap between cards */
   justify-content: center; /* center the grid horizontally */
 }
@@ -323,8 +324,6 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: var(--borderRad);
-
-  max-width: 600px;
   height: auto;
 }
 
