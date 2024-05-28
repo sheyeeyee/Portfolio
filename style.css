@@ -15,9 +15,12 @@
 
   --borderRad: 15px;
 
-  --h1MaxFont: 40px;
-  --h1MidFont: 3.5vw;
+  --h1MaxFont: 35px;
+  --h1MidFont: 3.125vw;
   --h1MinFont: calc(15px + 2vw);
+
+  --sigMargRight: 2%;
+  --sigMargTop: -25px;
 }
 
 /* sections */
@@ -124,7 +127,15 @@ h1, h2, h4 {
   color: var(--green);
 }
 
-p {
+h3 {
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5, p {
   font-weight: 400;
 }
 
@@ -143,9 +154,9 @@ footer {
 }
 
 /* wide screen */
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1001px) {
   section {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -161,23 +172,19 @@ footer {
   }
 
   h2 {
-    font-size: calc(var(--h1MaxFont) - 12px);
+    font-size: calc(var(--h1MaxFont) - 10px);
   }
 
   h3 {
-    font-size: calc(var(--h1MaxFont) - 15px);
+    font-size: calc(var(--h1MaxFont) - 12px);
   }
 
   h4, #navBar {
+    font-size: calc(var(--h1MaxFont) - 15px);
+  }
+
+  h5, p, .dropdownContent {
     font-size: calc(var(--h1MaxFont) - 17px);
-  }
-
-  h5, .dropdownContent {
-    font-size: calc(var(--h1MaxFont) - 20px);
-  }
-
-  p {
-    font-size: calc(var(--h1MaxFont) - 22px);
   }
 
   #portrait {
@@ -187,8 +194,8 @@ footer {
 
   #signature {
     float: right;
-    margin-right: 5%;
-    margin-top: -20px;
+    margin-right: var(--sigMargRight);
+    margin-top: var(--sigMargTop);
   }
 
   .pdfText {
@@ -196,9 +203,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .cardGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media screen and (min-width: 801px) and (max-width: 900px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
   section {
     margin-left: auto;
     margin-right: auto;
@@ -228,7 +239,7 @@ footer {
   }
 
   h5, p {
-    font-size: calc(var(--h1MidFont) - 1.5vw);
+    font-size: calc(var(--h1MidFont) - 1.375vw);
   }
 
   #portrait {
@@ -238,14 +249,18 @@ footer {
 
   #signature {
     float: right;
-    margin-right: 5%;
-    margin-top: -20px;
+    margin-right: var(--sigMargRight);
+    margin-top: var(--sigMargTop);
   }
 
   .pdfText {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -277,6 +292,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -313,8 +332,7 @@ footer {
 /* cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjust minmax values as needed */
-  gap: 25px; /* adjust the gap between cards */
+  gap: 35px; /* adjust the gap between cards */
   justify-content: center; /* center the grid horizontally */
 }
 
@@ -330,6 +348,10 @@ footer {
 /* on mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card h4, .card h5 {
+  line-height: 0.1;
 }
 
 /* add some padding inside the card container */
@@ -358,7 +380,8 @@ img.right {
 }
 
 #portrait {
-  max-width: 40%;
+  width: 35%;
+  max-width: 300px;
   min-width: 100px;
   height: auto;
 }
