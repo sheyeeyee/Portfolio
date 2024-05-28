@@ -41,6 +41,7 @@
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   position: relative; /* dropdown relative to parent */
+  margin-left: 5%;
 }
 
 ul {
@@ -118,7 +119,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h4 {
   color: var(--green);
 }
 
@@ -142,13 +143,16 @@ footer {
 
 /* wide screen */
 @media screen and (min-width: 901px) {
+  section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .introArticle {
     display: flex;
     align-items: center; /* center items vertically */
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
   }
 
   h1 {
@@ -159,16 +163,20 @@ footer {
     font-size: calc(var(--h1MaxFont) - 12px);
   }
 
-  h3, #navBar {
+  h3 {
+    font-size: calc(var(--h1MaxFont) - 15px);
+  }
+
+  h4, #navBar {
     font-size: calc(var(--h1MaxFont) - 17px);
+  }
+
+  h5, .dropdownContent {
+    font-size: calc(var(--h1MaxFont) - 20px);
   }
 
   p {
     font-size: calc(var(--h1MaxFont) - 22px);
-  }
-
-  .dropdownContent {
-    font-size: calc(var(--h1MaxFont) - 20px);
   }
 
   #portrait {
@@ -190,13 +198,16 @@ footer {
 }
 
 @media screen and (min-width: 801px) and (max-width: 900px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+
   .introArticle {
     display: flex;
     align-items: center; /* center items vertically */
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
   }
 
   h1 {
@@ -207,12 +218,16 @@ footer {
     font-size: calc(var(--h1MidFont) - 0.75vw)
   }
 
-  h3, #navBar, .dropdownContent {
+  h3 {
+    font-size: calc(var(--h1MidFont) - 0.875vw)
+  }
+
+  h4, #navBar, .dropdownContent {
     font-size: calc(var(--h1MidFont) - 1vw);
   }
 
-  p {
-    font-size: calc(var(--h1MidFont) - 1.25vw);
+  h5, p {
+    font-size: calc(var(--h1MidFont) - 1.5vw);
   }
 
   #portrait {
@@ -244,11 +259,11 @@ footer {
     font-size: var(--h1MinFont);
   }
 
-  h2 {
-    font-size: calc(10px + 1.25vw);
+  h2, h4 {
+    font-size: calc(10px + 1.5vw);
   }
 
-  h3, #navBar, .dropdownContent {
+  h3, h5, #navBar, .dropdownContent {
     font-size: calc(10px + 1vw);
   }
 
@@ -297,7 +312,7 @@ footer {
 /* cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjust minmax values as needed */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* adjust minmax values as needed */
   gap: 25px; /* adjust the gap between cards */
   justify-content: center; /* center the grid horizontally */
 }
@@ -320,7 +335,7 @@ footer {
 
 /* add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 1px 16px;
 }
 
 .cardImg {
@@ -340,6 +355,7 @@ img.right {
   max-width: 200px;
   min-width: 100px;
   height: auto;
+  margin-left: 3%;
 }
 
 #portrait {
