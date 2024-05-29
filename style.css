@@ -127,7 +127,7 @@ h1, h2, h4 {
   color: var(--green);
 }
 
-h3 {
+h3, p {
   line-height: 1.5;
 }
 
@@ -139,14 +139,22 @@ h5, p {
   font-weight: 400;
 }
 
-.pdf {
-  position: relative;
-  width: 62%;
+iframe {
+  position: relative; /* allows box to be resized */
   max-width: 1000px;
   max-height: 600px;
   resize: both;
-  height: 30vw;
   border-radius: var(--borderRad);
+}
+
+.pdfText {
+  gap: 40px;
+}
+
+.headingAndPic {
+  display: flex;
+  align-items: center; /* center items vertically */
+  width: 100%;
 }
 
 footer {
@@ -189,7 +197,7 @@ footer {
 
   #portrait {
     margin-right: 50px; /* adjust spacing between image and text */
-    flex-shrink: 0; /* prevent the image from shrinking */
+    flex-shrink: 0; /* prevent the image from shrinking weirdly? */
   }
 
   #signature {
@@ -206,6 +214,10 @@ footer {
 
   .cardGrid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .imgGrid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -244,7 +256,7 @@ footer {
 
   #portrait {
     margin-right: 50px; /* adjust spacing between image and text */
-    flex-shrink: 0; /* prevent the image from shrinking */
+    flex-shrink: 0; /* prevent the image from shrinking weirdly? */
   }
 
   #signature {
@@ -261,6 +273,10 @@ footer {
 
   .cardGrid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .imgGrid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -294,7 +310,7 @@ footer {
     width: 50%;
   }
 
-  .cardGrid {
+  .cardGrid, .imgGrid {
     grid-template-columns: 1fr;
   }
 }
@@ -366,7 +382,20 @@ footer {
   border-radius: var(--borderRad) var(--borderRad) 0 0;
 }
 
+/* image grid */
+.imgGrid {
+  display: grid;
+  gap: 35px; /* adjust the gap between cards */
+  justify-content: center; /* center the grid horizontally */
+}
+
 /* images */
+img {
+  border-radius: var(--borderRad);
+  height: 300px;
+  object-fit: contain;
+}
+
 img.right {
   float: right;
 }
@@ -391,6 +420,22 @@ img.right {
   max-width: 125px;
   min-width: 60px;
   height: auto;
+}
+
+.headingPic {
+  width: 12%;
+  max-width: 100px;
+  min-width: 30px;
+  height: auto;
+  margin-left: 1%
+}
+
+.tiInsertCad {
+  width: 8%;
+  max-width: 50px;
+  min-width: 30px;
+  height: auto;
+  margin-left: 1%
 }
 
 .footLogos {
