@@ -57,7 +57,7 @@ ul {
 }
 
 .tocText {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #navHome, #navProj {
@@ -392,8 +392,8 @@ footer {
 /* images */
 img {
   border-radius: var(--borderRad);
-  height: 300px;
-  object-fit: contain;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 img.right {
