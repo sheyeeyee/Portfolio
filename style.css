@@ -137,12 +137,12 @@ h4 {
   font-weight: 600;
 }
 
-h5, p {
+h5, p, figcaption {
   font-weight: 400;
 }
 
 p {
-  margin: 0em;
+  margin: 0;
 }
 
 iframe {
@@ -373,7 +373,8 @@ footer {
 }
 
 .card h4, .card h5 {
-  line-height: 0.1;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* add some padding inside the card container */
@@ -404,6 +405,10 @@ img {
 
 img.right {
   float: right;
+}
+
+figure {
+  margin: 0;
 }
 
 #headerName {
