@@ -79,6 +79,7 @@ ul {
 
 /* dropdown content (hidden by default) */
 .dropdownContent {
+  display: none; /* hides it */
   background-color: rgb(240, 255, 243, 0.5);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   font-weight: 500;
@@ -86,11 +87,14 @@ ul {
   flex-direction: column;
 }
 
+.dropdownContent li {
+  display: none;
+}
+
 /* links inside the dropdown */
 .dropdownContent a {
   color: var(--darkGreen);
   display: block;
-  margin-right: 10px;
 }
 
 /* change color of dropdown links on hover */
@@ -99,7 +103,7 @@ ul {
 }
 
 /* show the dropdown menu on hover */
-.dropdown:hover .dropdownContent {
+.dropdown:hover .dropdownContent li {
   display: block;
 }
 
