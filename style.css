@@ -141,6 +141,10 @@ h5, p, figcaption {
   font-weight: 400;
 }
 
+figcaption a {
+  text-decoration: underline;
+}
+
 p {
   margin: 0;
 }
