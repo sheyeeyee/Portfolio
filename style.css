@@ -347,7 +347,7 @@ footer {
 }
 
 /* hover */
-#headerName:hover, #footLogos:hover, #engrAndMusic:hover {
+#headerName:hover, #footLogos:hover, #engrAndMusic:hover, .tocText:hover {
   opacity: 0.75;
 }
 
