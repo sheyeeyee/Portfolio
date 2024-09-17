@@ -464,3 +464,9 @@ figure {
   height: auto;
   margin: 7px; /* adjust spacing between images */
 }
+
+#footResume {
+  max-width: 10%;
+  min-width: 75px;
+  height: auto;
+}
