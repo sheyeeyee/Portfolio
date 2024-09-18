@@ -491,7 +491,7 @@ body {
   @include center;
 }
 
-.container {
+.placeholder {
   position: relative;
   width: 900px;
   height: 600px;
