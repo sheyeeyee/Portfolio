@@ -347,7 +347,7 @@ footer {
 }
 
 /* hover */
-#headerName:hover, #footLogos:hover, #footResume:hover, #engrAndMusic:hover, #cwru:hover, .tocText:hover {
+#headerName:hover, #footLogos:hover, #footResume:hover, #engrAndMusic:hover, #cwru:hover, .tocText:hover, #bajaIntro:hover {
   opacity: 0.75;
 }
 
