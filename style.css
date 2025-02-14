@@ -149,6 +149,10 @@ p {
   margin: 0;
 }
 
+summary{
+  font-weight: bold;
+}
+
 iframe {
   position: relative; /* allows box to be resized */
   max-width: 1000px;
