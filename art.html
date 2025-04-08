@@ -91,6 +91,26 @@
                     <!-- COLUMN 3 -->
                     <div class="art-column">
                         <div class="card">
+                            <img src="images/octahedronPortfolio/octahedron1.png" class="art-cardImg" alt="Artwork 1">
+                            <div class="container">
+                                <h4>Octahedron</h4>
+                                <h5>Mistakes set in epoxy resin</h5>
+                            </div>
+                        </div>
+
+                        <div class="card hover-slideshow">
+                          <div class="slideshow">
+                            <img src="images/octahedronPortfolio/process/IMG_2037.jpg" alt="Art angle 1">
+                            <img src="images/octahedronPortfolio/process/IMG_2039.jpg" alt="Art angle 2">
+                            <img src="images/octahedronPortfolio/process/IMG_2040.jpg" alt="Art angle 3">
+                          </div>
+                          <div class="container">
+                            <h4>Octahedron Process</h4>
+                          </div>
+                        </div>
+                        
+
+                        <div class="card">
                             <img src="images/artPortfolio/6.10.20koons.PNG" class="art-cardImg" alt="Artwork 1">
                             <div class="container">
                                 <h4>Jeff Koons' Balloon Dog</h4>
@@ -98,13 +118,13 @@
                             </div>
                         </div>
 
-                      <div class="card">
-                        <img src="images/artPortfolio/9.28.19inktober.PNG" class="art-cardImg" alt="Artwork 4">
-                        <div class="container">
-                          <h4>2019 Inktober Prompt 1: Ring</h4>
-                          <h5>Drawn with ball-point pen</h5>
+                        <div class="card">
+                          <img src="images/artPortfolio/9.28.19inktober.PNG" class="art-cardImg" alt="Artwork 4">
+                          <div class="container">
+                            <h4>2019 Inktober Prompt 1: Ring</h4>
+                            <h5>Drawn with ball-point pen</h5>
+                          </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </section>
@@ -114,5 +134,31 @@
 
         <script src="dynamicPos.js"></script>
         <script src="includeFooter.js"></script>
+        <script>
+          document.querySelectorAll('.hover-slideshow').forEach(card => {
+            const images = card.querySelectorAll('.slideshow img');
+            let index = 0;
+            let interval;
+          
+            card.addEventListener('mouseenter', () => {
+              images.forEach(img => img.classList.remove('active'));
+              images[0].classList.add('active');
+          
+              interval = setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+              }, 1000); // 1s per frame, adjust as you like
+            });
+          
+            card.addEventListener('mouseleave', () => {
+              clearInterval(interval);
+              images.forEach(img => img.classList.remove('active'));
+              index = 0;
+              images[0].classList.add('active');
+            });
+          });
+          </script>
+          
     </body>
 </html>
