@@ -470,6 +470,10 @@ figure {
   object-fit:fill;
   opacity: 0;
   transition: opacity 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover-slideshow .slideshow img.active {
