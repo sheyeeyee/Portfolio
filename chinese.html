@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Shelley Wei</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="index.html" id="webHome"><img src="images/name.png" alt="Shelley Wei" id="headerName"></a>
+            <nav id="navBar">
+                <ul>
+                    <li><a id="navHome" class="bold" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a id="navProj" class="bold active" href="projects.html">Projects (and more)</a>
+                        <!-- <ul class="dropdownContent" style="padding: 0 10px 0 10px;">
+                            <li style="padding-top: 10px"><a href="projects.html#engineering">Engineering</a></li>
+                            <li><a href="projects.html#music">Music</a></li>
+                            <li><a href="projects.html#entrepreneurship">Entrepreneurship</a></li>
+                            <li style="padding-bottom: 10px"><a href="#art">Art</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section>
+                <h1>Idioms</h1>
+                <p>
+                    The Chinese language is so complex, but that complexity easily creates short phrases that are packed with meaningful philosophies of life. 
+                    <br><br>
+                    These thoughts are often difficult to express gracefully in languages like English... I tried my best to translate.
+                </p>
+
+                <br><br>
+
+                <div class="art-columns">
+                    <!-- COLUMN 1 -->
+                    <div class="art-column">
+                      <div class="card">
+                        <img src="images/culturePortfolio/river.png" class="art-cardImg" alt="Artwork 1">
+                        <div class="container">
+                            <h4 style="margin-bottom: -20px;">十年河东，十年河西</h4>
+                            <h6 style="margin-bottom: -2px;">(shí nián hé dōng, shí nián hé xī)</h6>
+                            <h5>Like a river, life isn't static, nor will it always continue in the same direction.</h5>
+                            <!-- <h6>Always provide the benefit of the doubt for positive change.</h6> -->
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- COLUMN 2 -->
+                    <div class="art-column">
+                      <div class="card">
+                        <img src="images/culturePortfolio/duletemple.jpg" class="art-cardImg" alt="Dule Temple Sign">
+                        <div class="container">
+                          <h4 style="margin-bottom: -20px;">具足园成</h4>
+                          <h6 style="margin-bottom: -2px;">(jù zú yuán chéng)</h6>
+                          <h5>You already have what you need to be content.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- COLUMN 3 -->
+                    <div class="art-column">
+                        <div class="card">
+                            <!-- <img src="images/octahedronPortfolio/octahedron1.png" class="art-cardImg" alt="Artwork 1"> -->
+                            <div class="container">
+                                <h4>等等</h4>
+                                <h5>[placeholder]</h5>
+                            </div>
+                        </div>
+
+                        <!-- <div class="card hover-slideshow">
+                          <div class="slideshow">
+                            <img src="images/octahedronPortfolio/process/IMG_2037.jpg" alt="Setting materials" class="active">
+                            <img src="images/octahedronPortfolio/process/IMG_2039.jpg" alt="Poured epoxy, waiting to set">
+                            <img src="images/octahedronPortfolio/process/IMG_2040.jpg" alt="Ensuring pieces stay below the epoxy surface">
+                            <img src="images/octahedronPortfolio/process/IMG_2048.jpg" alt="Finished one half">
+                            <img src="images/octahedronPortfolio/process/IMG_2049.jpg" alt="Finished one half angle 2">
+                            <img src="images/octahedronPortfolio/process/IMG_2050.jpg" alt="Setting materials for next half">
+                            <img src="images/octahedronPortfolio/process/IMG_2051.jpg" alt="Setting materials for next half 2">
+                            <img src="images/octahedronPortfolio/process/IMG_2052.jpg" alt="Setting alternate side of materials for next half">
+                            <img src="images/octahedronPortfolio/process/IMG_2071.jpg" alt="Epoxying two halves together">
+                          </div>
+                          <div class="container">
+                            <h4>Octahedron Process</h4>
+                          </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="dynamicPos.js"></script>
+        <script src="includeFooter.js"></script>
+        <script>
+          document.querySelectorAll('.hover-slideshow').forEach(card => {
+            const images = card.querySelectorAll('.slideshow img');
+            let index = 0;
+            let interval;
+          
+            card.addEventListener('mouseenter', () => {
+              images.forEach(img => img.classList.remove('active'));
+              images[0].classList.add('active');
+          
+              interval = setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+              }, 1000); // 1s per frame, adjust as you like
+            });
+          
+            card.addEventListener('mouseleave', () => {
+              clearInterval(interval);
+              images.forEach(img => img.classList.remove('active'));
+              index = 0;
+              images[0].classList.add('active');
+            });
+          });
+          </script>
+          
+    </body>
+</html>

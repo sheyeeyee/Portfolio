@@ -137,7 +137,7 @@ h4 {
   font-weight: 600;
 }
 
-h5, p, figcaption {
+h5, h6, p, figcaption {
   font-weight: 400;
 }
 
@@ -207,6 +207,10 @@ footer {
 
   h5, p, .dropdownContent {
     font-size: calc(var(--h1MaxFont) - 17px);
+  }
+
+  h6 {
+    font-size: calc(var(--h1MaxFont)*.9 - 18px);
   }
 
   #portrait {
