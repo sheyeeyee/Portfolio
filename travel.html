@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Shelley Wei</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="index.html" id="webHome"><img src="images/name.png" alt="Shelley Wei" id="headerName"></a>
+            <nav id="navBar">
+                <ul>
+                    <li><a id="navHome" class="bold" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a id="navProj" class="bold active" href="projects.html">Projects (and more)</a>
+                        <!-- <ul class="dropdownContent" style="padding: 0 10px 0 10px;">
+                            <li style="padding-top: 10px"><a href="projects.html#engineering">Engineering</a></li>
+                            <li><a href="projects.html#music">Music</a></li>
+                            <li><a href="projects.html#entrepreneurship">Entrepreneurship</a></li>
+                            <li style="padding-bottom: 10px"><a href="#art">Art</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section>
+                <h1>Around the World</h1>
+                <p>
+                    Gotta get around before I can't anymore.
+                </p>
+
+                <br><br>
+
+                <div class="art-columns">
+                    <!-- COLUMN 1 -->
+                    <div class="art-column">
+                      <div class="card">
+                        <img src="images/travelPortfolio/brooklynBridgetoChorus.jpg" class="art-cardImg" alt="Artwork 1">
+                        <div class="container">
+                            <h4>One of the bridges</h4>
+                            <h5>Brooklyn, New York</h5>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img src="images/travelPortfolio/clevelandEclipse.jpg" class="art-cardImg" alt="Artwork 1">
+                        <div class="container">
+                            <h4>Is that the moon or the sun?</h4>
+                            <h5>Cleveland, Ohio</h5>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img src="images/travelPortfolio/spainPoop.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>Caca</h4>
+                          <h5>Madrid, Spain</h5>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- COLUMN 2 -->
+                    <div class="art-column">
+                      <div class="card">
+                        <img src="images/travelPortfolio/clevelandOrch.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>Orchestration in Cleveland</h4>
+                          <h5>Cleveland, Ohio</h5>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img src="images/travelPortfolio/ireland.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>Traditional</h4>
+                          <h5>Galway, Ireland</h5>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- COLUMN 3 -->
+                    <div class="art-column">
+                      <div class="card">
+                        <img src="images/travelPortfolio/clevelandRocknRoll.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>LONG LIVE ROCK!</h4>
+                          <h5>Cleveland, Ohio</h5>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img src="images/travelPortfolio/clevelandRocknRollShirt.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>Handle with care</h4>
+                          <h5>Cleveland, Ohio</h5>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img src="images/travelPortfolio/detroitHotDog.jpg" class="art-cardImg">
+                        <div class="container">
+                          <h4>Hot dog</h4>
+                          <h5>Detroit, Michigan</h5>
+                        </div>
+                      </div>
+
+                        <!-- <div class="card hover-slideshow">
+                          <div class="slideshow">
+                            <img src="images/octahedronPortfolio/process/IMG_2037.jpg" alt="Setting materials" class="active">
+                            <img src="images/octahedronPortfolio/process/IMG_2039.jpg" alt="Poured epoxy, waiting to set">
+                            <img src="images/octahedronPortfolio/process/IMG_2040.jpg" alt="Ensuring pieces stay below the epoxy surface">
+                            <img src="images/octahedronPortfolio/process/IMG_2048.jpg" alt="Finished one half">
+                            <img src="images/octahedronPortfolio/process/IMG_2049.jpg" alt="Finished one half angle 2">
+                            <img src="images/octahedronPortfolio/process/IMG_2050.jpg" alt="Setting materials for next half">
+                            <img src="images/octahedronPortfolio/process/IMG_2051.jpg" alt="Setting materials for next half 2">
+                            <img src="images/octahedronPortfolio/process/IMG_2052.jpg" alt="Setting alternate side of materials for next half">
+                            <img src="images/octahedronPortfolio/process/IMG_2071.jpg" alt="Epoxying two halves together">
+                          </div>
+                          <div class="container">
+                            <h4>Octahedron Process</h4>
+                          </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="dynamicPos.js"></script>
+        <script src="includeFooter.js"></script>
+        <script>
+          document.querySelectorAll('.hover-slideshow').forEach(card => {
+            const images = card.querySelectorAll('.slideshow img');
+            let index = 0;
+            let interval;
+          
+            card.addEventListener('mouseenter', () => {
+              images.forEach(img => img.classList.remove('active'));
+              images[0].classList.add('active');
+          
+              interval = setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+              }, 1000); // 1s per frame, adjust as you like
+            });
+          
+            card.addEventListener('mouseleave', () => {
+              clearInterval(interval);
+              images.forEach(img => img.classList.remove('active'));
+              index = 0;
+              images[0].classList.add('active');
+            });
+          });
+          </script>
+          
+    </body>
+</html>
