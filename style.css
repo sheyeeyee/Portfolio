@@ -355,7 +355,7 @@ footer {
 }
 
 /* hover */
-#headerName:hover, #footLogos:hover, #footResume:hover, #engrAndMusic:hover, #cwru:hover, .tocText:hover, #bajaIntro:hover, #scvt:hover, #cwrumWeb:hover, #clickToSeeMore:hover {
+#headerName:hover, #keepThingsMoving:hover, #footLogos:hover, #footResume:hover, #engrAndMusic:hover, #cwru:hover, .tocText:hover, #bajaIntro:hover, #scvt:hover, #cwrumWeb:hover, #clickToSeeMore:hover {
   opacity: 0.75;
 }
 
