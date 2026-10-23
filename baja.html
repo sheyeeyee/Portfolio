@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <title>Shelley Wei</title>
+        <title>Baja SAE | Shelley Wei</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
     </head>
 
-    <body>
+    <body class="baja-page">
         <header id="header">
             <a href="index.html" id="webHome"><img src="images/name.png" alt="Shelley Wei" id="headerName"></a>
             <nav id="navBar">
@@ -26,6 +26,7 @@
                     </li>
                 </ul>
             </nav>
+<<<<<<< Updated upstream
 
             <nav class="breadcrumbs" aria-label="Breadcrumb">
                 <ol>
@@ -33,37 +34,229 @@
                     <li><span class="breadcrumb-separator" aria-hidden="true">/</span> <span aria-current="page">Baja SAE</span></li>
                 </ol>
             </nav>
+=======
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="projects.html"><span class="halfHighlight">Projects</span></a></li><li><span aria-hidden="true">/</span> <span aria-current="page">Baja SAE</span></li></ol></nav>
+>>>>>>> Stashed changes
         </header>
 
-        <main id="main">
-            <section>
-                <article>
-                    <h1>CWRU Motorsports (Baja SAE)</h1>
-                    <h2><a href="https://cwrumotorsports.com" target="_blank" id="cwrumWeb"><span class="halfHighlight">cwrumotorsports.com</span></a></h2>
-                    <br><br>
-                    <div class="imgGrid">
-                        <figure>
-                            <img src="images/bajaPortfolio/milling.jpg" alt="Milling aluminum">
-                            <figcaption>Using a shell mill to flatten piece of aluminum for the engine spacer</figcaption>
+        <nav class="baja-live-toc" aria-label="On this page">
+            <a href="#design"><span>01</span><span class="baja-toc-label"><span>Design</span></span></a>
+            <a href="#mfg"><span>02</span><span class="baja-toc-label"><span>Manufacturing</span></span></a>
+            <a href="#projmgmt"><span>03</span><span class="baja-toc-label"><span>Project Management</span></span></a>
+            <a href="#learning"><span>04</span><span class="baja-toc-label"><span>Learning Goals</span></span></a>
+        </nav>
+        <main id="main" class="baja-main">
+<section class="baja-intro" aria-labelledby="baja-title">
+ <p class="baja-eyebrow">Baja SAE</p>
+ <h1 id="baja-title">CWRU Motorsports</h1>
+ <p>Designing, manufacturing, and creating systems that keep our team moving.</p>
+ <h4 class="baja-team-link"><a href="https://cwrumotorsports.com" target="_blank" rel="noopener"><span class="halfHighlight">cwrumotorsports.com</span></a></h4>
+ <nav class="baja-jump-links" aria-label="Baja sections">
+    <a class="card" href="#design">Design</span></a>
+    <a class="card" href="#mfg">Manufacturing</span></a>
+    <a class="card" href="#projmgmt">Project Management</span></a>
+    <a class="card" href="#learning">Learning Goals</span></a>
+ </nav>
+</section>
+<section id="design" class="baja-section" aria-labelledby="design-title">
+ <p class="baja-eyebrow">01 / Design</p><h2 id="design-title">From CAD to the car</h2>
+ <article id="cvt" class="baja-subproject" aria-labelledby="cvt-title">
+ <h3 id="cvt-title">Continuously Variable Transmission</h3>
+ <p>Designed primary and secondary CVT pulleys over the 2024-2026 seasons.</p>
+ <nav class="baja-jump-links" aria-label="CVT portfolios">
+  <a class="card" href="#primary">Primary Pulley</span></a>
+  <a class="card" href="#secondary">Secondary Pulley</span></a>
+ </nav>
+ <div id="primary" class="baja-subproject">
+ <a class="card baja-project-card" href="#primary-portfolio">
+  <div><p class="baja-eyebrow">2025-2026 season / SR26</p><h3>Primary CVT Pulley</h3><p>Designed team's third custom primary pulley, increasing torque output, allowing our car to climb over Suspension & Traction and Endurance obstacles consistently.</p></div>
+  <img src="images/bajaPortfolio/pcvt/primary_Layer2.png" alt="Primary CVT pulley CAD model" loading="lazy">
+ </a>
+ <div id="primary-portfolio" class="card baja-document baja-subproject">
+  <div class="baja-document-label"><span>Primary CVT Pulley Portfolio</span><a href="images/bajaPortfolio/pcvt/Shelley_Wei_-_BajaSAESR26PrimaryCVTPortfolio.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/pcvt/Shelley_Wei_-_BajaSAESR26PrimaryCVTPortfolio.pdf#view=FitH" title="Primary CVT Pulley · Design Portfolio" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/pcvt/Shelley_Wei_-_BajaSAESR26PrimaryCVTPortfolio.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+ </div>
+ </div>
+ <div id="secondary" class="baja-subproject">
+ <a id="scvt" class="card baja-project-card" href="#secondary-portfolio">
+  <div><p class="baja-eyebrow">2024-2025 season / SR25</p><h3>Secondary CVT Pulley</h3><p>Designed team's first custom secondary CVT pulley, improving backshifting performance for the Maneuverability and Suspension & Traction events.</p></div>
+  <img src="images/bajaPortfolio/scvt/scvtRender.png" alt="Secondary CVT pulley CAD model" loading="lazy">
+ </a>
+ <div id="secondary-portfolio" class="card baja-document baja-subproject">
+  <div class="baja-document-label"><span>Secondary CVT Pulley Portfolio</span><a href="images/bajaPortfolio/scvt/Shelley Wei - Baja SAE SR25 Secondary CVT Presentation.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/scvt/Shelley Wei - Baja SAE SR25 Secondary CVT Presentation.pdf#view=FitH" title="Secondary CVT Pulley · Design Presentation" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/scvt/Shelley Wei - Baja SAE SR25 Secondary CVT Presentation.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+ </div>
+ </div>
+ </article>
+ <br><br>
+ <article id="steering" class="baja-subproject">
+ <a class="card baja-project-card" href="#steering-review">
+  <div><p class="baja-eyebrow">2023-2024 season</p><h3>Steering Rack Housing</h3><p>Designed the first dual-pinion steering rack housing for the SR24 (2023-2024 vehicle), decreasing tie rod loading.</p></div>
+  <img src="images/bajaPortfolio/srh/srh.png" alt="Steering rack housing CAD model" loading="lazy">
+ </a>
+
+<div id="steering-review" class="card baja-document" style="scroll-margin-top: 210px;">
+  <div class="baja-document-label"><span>Steering rack housing · Detailed Design Review</span><a href="images/bajaPortfolio/srh/srhDdrSlides.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/srh/srhDdrSlides.pdf#view=FitH" title="Steering Rack Housing Detailed Design Review" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/srh/srhDdrSlides.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Steering Rack Housing FEA and Design Notes</span><a href="images/bajaPortfolio/srh/srhFeaWftData.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/srh/srhFeaWftData.pdf#view=FitH" title="Steering Rack Housing FEA and Design Notes" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/srh/srhFeaWftData.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+                    <div class="cardGrid" style="margin-top: 15px;">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/srh/srhInCar.jpg" alt="Steering Rack Housing in SR24">
+                            <figcaption>Steering Rack Housing in SR24</figcaption>
                         </figure>
-                        <figure>
-                            <img src="images/bajaPortfolio/falling.jpg" alt="CWRU Motorsports holding up Model K at Michigan Competition">
-                            <figcaption>About to fall out of the car...</figcaption>
+                    </div></article>
+</section>
+<section id="mfg" class="baja-section" aria-labelledby="mfg-title"><p class="baja-eyebrow">02 / Manufacturing</p><h2 id="mfg-title">Making the parts</h2><p>
+                        After a year on CWRU Motorsports, I've made some really cool parts with the help of my more experienced teammates (and with a lot of standing at a machine for an entire day...). I helped others do the same as the Manufacturing Coordinator for CWRU Motorsports' 2024-2025 season. I've machined many more parts since then, we'll see if I get around to adding them here.
+                    </p>
+        <div class="card baja-part-heading headingAndPic">
+            <h3 style="font-weight: 500;">Heim Joint Inserts</h3>
+            <img src="images/bajaPortfolio/titaniumInserts/heimJointInsertCAD.png" alt="Heim joint insert CAD model" class="tiInsertCad">
+        </div>
+        <p>These inserts are locationally fit into the tie rod ends' spherical joints, connecting to the uprights.</p>
+<div class="imgGrid">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/titaniumInserts/heimJointInsertSet.jpg" alt="Heim Joint Insert Set">
+                            <figcaption>Heim Joint Insert Set</figcaption>
+                        </figure>
+
+                    </div>
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Manufacturing Notes for Heim Joint Inserts</span><a href="images/bajaPortfolio/titaniumInserts/heimJointInsertsNotes.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/titaniumInserts/heimJointInsertsNotes.pdf#view=FitH" title="Manufacturing Notes for Heim Joint Inserts" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/titaniumInserts/heimJointInsertsNotes.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+<div class="card baja-part-heading headingAndPic">
+                        <h3 style="font-weight: 500;">Spherical Joint Inserts</h3>
+                        <img src="images/bajaPortfolio/titaniumInserts/sphericalJointInsertCad.png" alt="Spherical joint insert CAD model" class="tiInsertCad">
+                    </div>
+                    <p>These inserts are locationally fit into the spherical joints in the uprights.</p>
+<div class="imgGrid">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/titaniumInserts/sphericalJointInsertInLathe.jpg" alt="Spherical Joint Insert in Lathe">
+                            <figcaption>Spherical Joint Insert in Lathe</figcaption>
+                        </figure>
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/titaniumInserts/sphericalJointInsertInProgress.jpg" alt="Spherical Joint Insert in Progress">
+                            <figcaption>Spherical Joint Insert in Progress</figcaption>
+                        </figure>
+
+                    </div>
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Manufacturing Notes for Spherical Joint Inserts</span><a href="images/bajaPortfolio/titaniumInserts/sphericalJointInsertsNotes.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/titaniumInserts/sphericalJointInsertsNotes.pdf#view=FitH" title="Manufacturing Notes for Spherical Joint Inserts" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/titaniumInserts/sphericalJointInsertsNotes.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+<br><br>
+<div class="card baja-part-heading headingAndPic">
+                        <h3 style="font-weight: 500;">Clevis-Side Heim Joint Inserts</h3>
+                        <img src="images/bajaPortfolio/titaniumInserts/clevisSideHeimJointInsertCAD.png" alt="Clevis-side heim joint insert CAD model" class="tiInsertCad">
+                    </div>
+                    <p>These inserts are locationally fit into the tie rod ends' spherical joints, connecting to the steering clevises.</p>
+
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Manufacturing Notes for Clevis-Side Heim Joint Inserts</span><a href="images/bajaPortfolio/titaniumInserts/clevisSideHeimJointInsertsNotes.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/titaniumInserts/clevisSideHeimJointInsertsNotes.pdf#view=FitH" title="Manufacturing Notes for Clevis-Side Heim Joint Inserts" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/titaniumInserts/clevisSideHeimJointInsertsNotes.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+<br><br>
+<div class="card baja-part-heading headingAndPic">
+    <h3 style="font-weight: 500;">Front Hub Spindle Yokes (Pre-CNC)</h3>
+    <img class="baja-spindle-heading-photo" src="images/bajaPortfolio/spindleYokePreCNC/spindleYokes.jpg" alt="Finished front hub spindle yokes before CNC machining" loading="lazy">
+</div>
+                    <p>These spindle yokes are titanium and were made on the lathe. They connect the front wheel hubs to the drive shafts.</p>
+<div class="imgGrid">
+                        <!-- <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/spindleYokePreCNC/spindleYokes.jpg" alt="Finished Spindle Yokes (Pre-CNC)">
+                            <figcaption>Finished Spindle Yokes (Pre-CNC)</figcaption>
+                        </figure> -->
+
+                    </div>
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Manufacturing Notes for Spindle Yokes (Pre-CNC)</span><a href="images/bajaPortfolio/spindleYokePreCNC/spindleYokePreCnc.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/spindleYokePreCNC/spindleYokePreCnc.pdf#view=FitH" title="Manufacturing Notes for Spindle Yokes (Pre-CNC)" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/spindleYokePreCNC/spindleYokePreCnc.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div>
+<div class="imgGrid">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/spindleYokePreCNC/spindleYokeSlotSetup.jpg" alt="Spindle Yoke Key Slot Setup in Mill">
+                            <figcaption>Spindle Yoke Key Slot Setup in Mill</figcaption>
+                        </figure>
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/spindleYokePreCNC/spindleYokeSlot.jpg" alt="Spindle Yoke Key Slot">
+                            <figcaption>Spindle Yoke Key Slot</figcaption>
+                        </figure>
+
+                    </div>
+<div class="card baja-document">
+  <div class="baja-document-label"><span>Manufacturing Notes for Spindle Yoke Key Slots</span><a href="images/bajaPortfolio/spindleYokePreCNC/spindleYokeSlot.pdf" download><span class="halfHighlight">Download PDF</span></a></div>
+  <iframe src="images/bajaPortfolio/spindleYokePreCNC/spindleYokeSlot.pdf#view=FitH" title="Manufacturing Notes for Spindle Yoke Key Slots" loading="lazy"></iframe>
+  <p class="baja-pdf-fallback"><a href="images/bajaPortfolio/spindleYokePreCNC/spindleYokeSlot.pdf" target="_blank" rel="noopener"><span class="halfHighlight">Open PDF in a new tab</span></a></p>
+</div></section>
+<section id="projmgmt" class="baja-section" aria-labelledby="management-title"><p class="baja-eyebrow">03 / Project Management</p><h2 id="management-title">Keeping the team moving</h2><p>
+                        Going into the 2024-2025 season, our team started putting a great emphasis toward improving our workflow and team culture.
+                    </p>
+                    <article class="baja-subproject"><h3>Notion</h3>
+                    <p>
+                        One huge change we made from previous years was a teamwide shift to using Notion as an organization software.
+                    </p>
+</article><article class="baja-subproject"><h3>Parts Tracker</h3>
+                    <p>
+                        The shift to Notion started with the creation of a new Parts Tracker for the upcoming season. To provide some context, our Parts Tracker was primarily meant for tracking the manufacturing status of our car parts, and it started out on a Google Sheet with tons of formulas and manual labor (I guess you could call it that...).</p><p>With the new season, there were many new features that the 2023-2024 Manufacturing Coordinator and I were thinking about implementing, so I wanted to test these features out.</p><p>Testing these features out on a Google Sheet just seemed arduous, and would probably have led to tons of roadblocks that impeded on the feature-testing. So, I turned to Notion instead, as I use it for my own personal planner which gave me some Notion experience to create a Parts Tracker.</p><p>After rolling out my first draft to the 2023-2024 Manufacturing Coordinator, there was huge support to actually keep the Parts Tracker in Notion. We ultimately ditched Google Sheets since all of the automations and features I set up would've been absolute chaos and, in some cases, impossible to set up in Google Sheets.</p><p>In addition to the automations, the new Parts Tracker also gave room for more information with less clutter. With Notion's ability to have different views of the same information, our team can now view part design status, analysis status, manufacturing status, vendor/sponsor order status, and so much more.</p><p></p>
+<div class="imgGrid">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/notion/sr24PartsTracker.png" alt="SR24 Parts Tracker in Google Sheets">
+                            <figcaption>SR24 Parts Tracker in Google Sheets</figcaption>
+                        </figure>
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/notion/sr25PartsTracker.png" alt="SR25 Parts Tracker in Notion">
+                            <figcaption>SR25 Parts Tracker in Notion</figcaption>
                         </figure>
                     </div>
-                    <br><br>
+
+</article><article class="baja-subproject"><h3>The Spread of Notion</h3>
                     <p>
-                        At the start of my freshman year, I knew nothing about cars and had no experience in designing or making parts. By the end of my freshman year, I've designed a few parts, big and small, and made parts ranging from materials as soft as brass and as hard as titanium. Oh, and I learned a bit about cars. 
+                        A few other subteam leads appreciated the possibilities of Notion as well, so they started making their own spaces in our team's Notion workspace. With everything that I learned from setting up the Parts Tracker in Notion, I guided other team leads in making their own integrations with Notion's colorful palette of features.</p><p>This signaled a huge shift for our team, as now we had planners and timelines accessible to everyone on the team, and much of our written documentation was now housed in our Notion workspace. Google Drive is no longer the go-to for meeting minutes and other written documentation, and our transition to Notion birthed a robust team wiki, design tracker, part analysis tracker, onboarding planner, purchase order tracker, and so much more.
+                    </p>
+</article><article class="baja-subproject"><h3>The Sky is the Limit</h3>
+                    <p>
+                        Genuinely, at the end of my tenure as the Manufacturing Coordinator (2024-2025), I thought I had learned nearly everything there was to learn about Notion and how to use it effectively for our team. However, I was proven wrong when I started the next season as the Finance Lead (2025-2026).</p><p>My goal as the Finance Lead was to set a budget for the entire season and track our expenses against that budget while earning plenty of money along the way. With Notion, I learned how to use the Rollup and Relation properties to create a budget that automatically updates based on the expenses we track in our new and improved Purchase Order Tracker. This way, I could show our team how much of our budget we had left at any given time, and I could also easily see which expenses were taking up the most room in our budget.
+                    </p>
+
+<figure class="card baja-photo">
+                        <img src="images/bajaPortfolio/notion/sr26FinanceTracking.png" alt="SR26 Finance Dashboard in Notion">
+                        <figcaption>SR26 Finance Dashboard in Notion</figcaption>
+                    </figure>
+
+<p>
+                        Other new features unlocked as well, such as bulk editing and Notion AI, which both saved me SO much time. Access to unlimited Notion AI is a huge thank-you to Notion; normally, student organizations are gifted the Plus Plan with limited Notion AI, but our team asked for and received the Business Plan with AI meeting notes, embedded Claude models, and so much more.</p><p>How much more can our team do with Notion? The sky is the limit.
+                    </p></article></section>
+<section id="learning" class="baja-section" aria-labelledby="learning-title"><p class="baja-eyebrow">04 / Learning</p><h2 id="learning-title">Learning along the way</h2><p>
+                        At the start of my freshman year, I knew nothing about cars and had no experience in designing or making parts. By the end of my freshman year, I've designed a few parts, big and small, and made parts ranging from materials as soft as brass and as hard as titanium. Oh, and I learned a bit about cars.
                         <br><br>
                         This upcoming season (2026-2027), I am honored to serve our team as the Technical Director. I have no doubt that this role will be a huge learning experience for me; this will be the ultimate "getting thrown into the deep end" college experience for me, and I'm excited to learn how to swim while helping my teammates stay afloat.
                         <br><br>
-                        I've gotten this far in large part due to what I've learned over the past three years. I've listed a few learning goals for the new season and will update the list as the season goes on.
-                        <br>
-                        <br>
-                        <details>
+                        I've gotten this far in large part due to what I've learned over the past three years. I've listed a few learning goals for the new season and will update the list as the season goes on.</p><div class="imgGrid">
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/milling.jpg" alt="Milling aluminum">
+                            <figcaption>Using a shell mill to flatten piece of aluminum for the engine spacer</figcaption>
+                        </figure>
+                        <figure class="card baja-photo">
+                            <img src="images/bajaPortfolio/falling.jpg" alt="CWRU Motorsports holding up Model K at Michigan Competition">
+                            <figcaption>About to fall out of the car...</figcaption>
+                        </figure>
+                    </div><div class="baja-goals"><details class="card">
                             <summary>2024-2025 Learning Goals</summary>
-                            <!-- <br>
-                            Curious to see exactly what I learned? Click each list item for the answer! -->
+
                             <ul>
                                 <p>Design</p>
                                 <li><p>1) <s>How contact forces relate to loads seen in real life</s></p></li>
@@ -75,14 +268,12 @@
                                 <li><p>2) <s>How material properties determine cutting methods</s></p></li>
                                 <li><p>3) <s>What ideal chips should look like</s></p></li>
                             </ul>
-                        </details>
-                        <br>
-                        <details>
+                        </details><details class="card">
                             <summary>2025-2026 Learning Goals</summary>
                             <ul>
                                 <p>Design</p>
                                 <li><p>1) <s>How to use code to model complex mechanical systems to determine unknown load values</s></p></li>
-                                <li><p>2) <s></s></p></li>
+
                                 <br>
                                 <p>Manufacturing</p>
                                 <li><p>1) How to operate a CNC mill/lathe</p></li>
@@ -92,9 +283,7 @@
                                 <li><p>1) <s>How to design software to be more user-friendly</s></p></li>
                                 <li><p>2) <s>How to start a subteam from scratch</s></p></li>
                             </ul>
-                        </details>
-                        <br>
-                        <details>
+                        </details><details class="card">
                             <summary>2026-2027 Learning Goals</summary>
                             <ul>
                                 <p>Design</p>
@@ -108,21 +297,12 @@
                                 <br>
                                 <p>Organization</p>
                                 <li><p>1) How to utilize resources and team members to design an entire vehicle...</p></li>
-                                <li><p>2) </p></li>
-                            </ul>
-                        </details>
-                        <br>
-                    </p>
-                    <h3>
-                        <br>
-                        Check out what I've gotten my hands on below!
-                    </h3>
-                    <!-- <ul class="toc">
-                        <li><a href="#design"><h3 class="tocText">Design</h3></a></li>
-                        <li><a href="#mfg"><h3 class="tocText">Manufacturing</h3></a></li>
-                        <li><a href="#projmgmt"><h3 class="tocText">Project Management</h3></a></li>
-                    </ul> -->
 
+                            </ul>
+                        </details></div></section>
+</main>
+
+<<<<<<< Updated upstream
                     <h2 id="design">Design</h2>
                     <details>
                         <summary id="clickToSeeMore">Click to see more!</summary>
@@ -378,12 +558,16 @@
         
         <div class="back-to-top"><a href="#top"><span class="halfHighlight">Back to top &uarr;</span></a></div>
 
+=======
+        <div class="baja-back-to-top"><a href="#top"><span class="halfHighlight">Back to top &uarr;</span></a></div>
+>>>>>>> Stashed changes
         <div id="footer-placeholder"></div>
 
         <script src="dynamicPos.js"></script>
         <script src="includeFooter.js"></script>
+        <script src="bajaNavigation.js"></script>
         <br>
-        <script src="slider.js"></script>
+
     </body>
 
 </html>
