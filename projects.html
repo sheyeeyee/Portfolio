@@ -9,31 +9,29 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
     </head>
 
-    <body>
+    <body class="projects-page">
         <header id="header">
             <a href="index.html" id="webHome"><img src="images/name.png" alt="Shelley Wei" id="headerName"></a>
             <nav id="navBar">
                 <ul>
                     <li><a id="navHome" class="bold" href="index.html">Home</a></li>
-                    <li class="dropdown">
+                    <li>
                         <a id="navProj" class="bold active" href="projects.html">Projects (and more)</a>
-                        <ul class="dropdownContent" style="padding: 0 10px 0 10px;">
-                            <li style="padding-top: 10px"><a href="#engineering">Engineering</a></li>
-                            <li><a href="#music"><s>Music</s> (coming soon)</a></li>
-                            <!-- <li><a href="#entrepreneurship">Entrepreneurship</a></li> -->
-                            <li><a href="#art">Art</a></li>
-                            <li style="padding-bottom: 10px"><a href="#worldwide">Mr. Worldwide</a></li>
-                        </ul>
                     </li>
                 </ul>
             </nav>
-            <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <!-- <nav class="breadcrumbs" aria-label="Breadcrumb">
                 <ol>
                     <li><span aria-current="page">Projects</span></li>
                 </ol>
-            </nav>
+            </nav> -->
         </header>
         
+        <nav class="baja-live-toc" aria-label="On this page">
+            <a href="#engineering"><span class="baja-toc-label"><span>Engineering</span></span></a>
+            <a href="#art"><span class="baja-toc-label"><span>Art</span></span></a>
+            <a href="#worldwide"><span class="baja-toc-label"><span>Mr. Worldwide</span></span></a>
+        </nav>
         <main id="main">
 
             <section>
@@ -45,7 +43,7 @@
                             <img src="images/bajaTeam.png" alt="CWRU Motorsports Team Picture" class="cardImg">
                             <div class="container">
                               <h4>CWRU Motorsports (Baja SAE)</h4>
-                              <h5>Design and Manufacturing Engineer</h5>
+                              <h5>Technical Director and more</h5>
                             </div>
                         </div>
                     </a>
@@ -144,6 +142,7 @@
 
         <script src="dynamicPos.js"></script>
         <script src="includeFooter.js"></script>
+        <script src="bajaNavigation.js"></script>
         <br>
     </body>
 </html>
