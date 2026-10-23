@@ -624,7 +624,6 @@ figure {
   min-width: 75px;
   height: auto;
 }
-<<<<<<< Updated upstream
 
 /* Shared page breadcrumbs */
 .breadcrumbs {
@@ -639,19 +638,16 @@ figure {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 6px 12px;
+  gap: 12px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.breadcrumbs li { display: inline-flex; align-items: baseline; gap: 12px; }
+.breadcrumbs li { display: flex; align-items: baseline; gap: 12px; }
 .breadcrumb-separator { color: var(--green); }
 .breadcrumbs a:hover { opacity: .75; }
 .breadcrumbs a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
 .breadcrumbs [aria-current="page"] { font-weight: 600; }
-@media (max-width: 600px) {
-  .breadcrumbs { font-size: 12px; }
-}
 
 /* Fixed return navigation, with a fade matching the header. */
 .back-to-top {
@@ -674,7 +670,6 @@ figure {
 .back-to-top a:hover { opacity: .75; }
 .back-to-top a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
 body { padding-bottom: max(10%, 100px); }
-=======
 /* Baja case studies: the same soft cards and document layout as the CVT portfolio. */
 .baja-live-toc { position: fixed; right: 20px; top: 220px; width: 170px; z-index: 900; font-size: 12px; font-weight: 500; }
 .baja-live-toc > p { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 16px 12px; }
@@ -739,9 +734,6 @@ body { padding-bottom: max(10%, 100px); }
 .baja-goals ul > p { margin: 16px 0 8px; font-weight: 600; }
 .baja-main a:focus-visible, .baja-main summary:focus-visible, .baja-back-to-top a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
 .baja-main .card:focus-within { box-shadow: 0 8px 16px 0 rgba(0,0,0,.2); }
-.baja-page .breadcrumbs { margin: 16px 0 0; padding-left: 20px; font-size: 13px; font-weight: 500; }
-.baja-page .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin: 0; padding: 0; }
-.baja-page .breadcrumbs li { display: flex; gap: 12px; }
 .baja-back-to-top { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; box-sizing: border-box; padding: 24px max(calc(10% + 8px), calc((100% - 1100px) / 2)) calc(12px + env(safe-area-inset-bottom, 0px)); background-image: linear-gradient(transparent, var(--grayGreen) 65%); pointer-events: none; text-align: right; font-size: 14px; font-weight: 500; }
 .baja-back-to-top a { display: inline-block; padding: 12px 0 12px 8px; pointer-events: auto; }
 .baja-page .baja-back-to-top { background: var(--grayGreen); }
@@ -758,4 +750,3 @@ body { padding-bottom: max(10%, 100px); }
   .baja-main .headingAndPic { padding: 20px; }
   .baja-main h3 { font-size: 21px; }
 }
->>>>>>> Stashed changes
