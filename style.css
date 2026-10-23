@@ -401,6 +401,53 @@ footer {
   border-radius: var(--borderRad) var(--borderRad) 0 0;
 }
 
+/* Homepage featured projects */
+#featured {
+  margin-top: 70px;
+  clear: both;
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.featured-card .cardImg {
+  object-fit: contain;
+}
+
+.featured-art .cardImg {
+  object-fit: cover;
+}
+
+.featured-card .container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.featured-card h3 {
+  margin: 0 0 12px;
+}
+
+.featured-card p {
+  margin-bottom: 20px;
+}
+
+.featured-link {
+  margin-top: auto;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.featured-card:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 5px;
+}
+
 /* image grid */
 .imgGrid {
   display: grid;
